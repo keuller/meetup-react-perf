@@ -1,0 +1,6 @@
+.DS_Store
+react/node_modules/*
+rax/node_modules/*
+inferno/node_modules/*
+preact/node_modules/*
+fiber/node_modules/*

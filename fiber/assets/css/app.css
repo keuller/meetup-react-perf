@@ -1,0 +1,9 @@
+.btn-flat { position: relative; padding: 8px 30px; border: none; margin: 10px; text-decoration: none; outline: 0!important; }
+.btn-flat, .btn-flat:focus { background-color: transparent; text-transform: uppercase; }
+.text-white { color: #fff; }
+.about-card .avatar {
+    -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%;
+    border-radius: 50%; width: 120px; margin: -65px auto 0; border: 5px solid #fff; background: #FFF;
+}
+.about-card .avatar img { width: 100%; }
+.about-card .avatar, .about-card .card-up { overflow: hidden; height: 120px; }
