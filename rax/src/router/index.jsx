@@ -52,7 +52,7 @@ class Router extends Component {
             if (view) break
         }
 
-        return (view ? createElement(view.component, { params: view.params }) : null)
+        return (view ? createElement(view.component, { router: this.props.history, params: view.params }) : null)
     }
 
 }

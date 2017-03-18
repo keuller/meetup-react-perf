@@ -4,7 +4,7 @@ var webpack = require('webpack')
 module.exports = {
   entry:{
     bundle: './src/index.js',
-    vendor: ['rax']
+    vendor: ['rax', 'path-to-regexp', 'history/createHashHistory']
   },
 
   output: {

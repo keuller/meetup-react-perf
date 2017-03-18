@@ -1,5 +1,4 @@
 import { createElement, Component } from 'rax'
-import history from 'util/history'
 import Bench from 'util/bench'
 
 const bench = new Bench()
@@ -9,7 +8,6 @@ class SimpleForm extends Component {
     constructor(props) {
         super(props)
         this.state = { name: '' }
-        this.nameInput = null
     }
 
     componentDidMount() {
@@ -21,13 +19,17 @@ class SimpleForm extends Component {
     }
 
     onNameChange = (e) => {
-        // this.setState({ name: e.target.value })
+        this.setState({ name: e.target.value })
     }
 
     onNextHandler = (e) => {
         e.preventDefault()
         if (this.state.name === '') return
-        history.push(`/resume/${this.nameInput.value}`)
+        this.props.router.push(`/resume/${this.state.name}`)
+    }
+
+    shouldComponentUpdate(props, state) {
+        return false
     }
 
     render() {
@@ -43,8 +45,7 @@ class SimpleForm extends Component {
                         <div className="md-form">
                             <i className="fa fa-user prefix"></i>
                             <input type="text" className="form-control" 
-                                ref={(input) => this.nameInput = input}
-                                maxLength="30" />
+                                onInput={this.onNameChange} maxLength="30" />
                             <label>Your Name</label>
                         </div>
 

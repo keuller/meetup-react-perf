@@ -1,7 +1,7 @@
 import { createElement, PureComponent } from 'rax';
 import Router from 'router'
 import routes from 'routes'
-import history from 'util/history'
+import createHashHistory from 'history/createHashHistory'
 
 import AppBar from 'components/AppBar'
 
@@ -12,7 +12,7 @@ class App extends PureComponent {
       <div>
         <AppBar />
         <div className="container">
-          <Router history={history} routes={routes}></Router>
+          <Router history={createHashHistory()} routes={routes}></Router>
         </div>
       </div>
     )
