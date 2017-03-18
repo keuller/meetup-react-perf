@@ -31,7 +31,7 @@
   },
   "devDependencies": {
     "babel-core": "^6.24.0",
-    "babel-loader": "^6.4.0",
+    "babel-loader": "^6.4.1",
     "babel-plugin-inferno": "^2.0.0",
     "babel-plugin-syntax-flow": "^6.18.0",
     "babel-plugin-syntax-jsx": "^6.18.0",
@@ -41,8 +41,8 @@
     "babel-runtime": "^6.23.0",
     "cross-env": "^3.2.4",
     "file-loader": "^0.10.1",
-    "flow-bin": "^0.41.0",
-    "history": "^4.6.0",
+    "flow-bin": "^0.42.0",
+    "history": "^4.6.1",
     "webpack": "^2.2.1",
     "webpack-dev-server": "^2.4.2"
   }
