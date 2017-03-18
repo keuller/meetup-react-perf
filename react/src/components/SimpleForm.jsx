@@ -1,5 +1,4 @@
 import React, { PureComponent } from 'react'
-
 import Bench from 'util/bench'
 
 const bench = new Bench()
@@ -8,7 +7,7 @@ class SimpleForm extends PureComponent {
 
     constructor(props, context) {
         super(props, context)
-        this.state = { name: ''}
+        this.state = { name: '' }
     }
 
     componentDidMount() {
@@ -27,7 +26,7 @@ class SimpleForm extends PureComponent {
         e.preventDefault()
         if (this.state.name === '') return
         let { router } = this.context
-        router.history.push(`/resume/${this.state.name}`, { })
+        router.history.push(`/resume/${this.state.name}`)
     }
 
     render() {
