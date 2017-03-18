@@ -4,7 +4,7 @@ var webpack = require('webpack')
 module.exports = {
   entry:{
     bundle: './src/index.js',
-    vendor: ['history', 'inferno', 'inferno-router']
+    vendor: ['history/createHashHistory', 'inferno', 'inferno-router']
   },
 
   output: {

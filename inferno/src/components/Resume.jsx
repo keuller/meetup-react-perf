@@ -1,5 +1,3 @@
-// @flow
-
 import Inferno from 'inferno'
 import { Link } from 'inferno-router'
 
@@ -14,7 +12,7 @@ function Resume(props) {
                         <h4 className="card-title text-xs-center">Resume</h4>
                         <hr/>
                         <p className="card-text text-xs-center">
-                            Congratulations {this.props.params.name}!
+                            Congratulations {props.params.name}!
                         </p>
                         <div className="text-xs-center">
                             <Link to="/">Home</Link>

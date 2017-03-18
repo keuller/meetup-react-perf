@@ -1,6 +1,5 @@
 import Inferno from 'inferno'
 import Component from 'inferno-component'
-import history from 'util/history'
 import Bench from 'util/bench'
 
 const bench = new Bench()
@@ -27,7 +26,7 @@ class SimpleForm extends Component {
     onNextHandler = (e) => {
         e.preventDefault()
         if (this.state.name === '') return
-        history.push(`/resume/${this.state.name}`, { name: this.state.name })
+        this.context.router.push(`/resume/${this.state.name}`)
     }
 
     render() {

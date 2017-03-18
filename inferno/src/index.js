@@ -1,8 +1,6 @@
-// @flow
-
 import Inferno, { render } from 'inferno'
 import { Router, Route, IndexRoute } from 'inferno-router'
-import history from 'util/history'
+import createHashHistory from 'history/createHashHistory'
 
 import App from 'components/App'
 import SimpleForm from 'components/SimpleForm'
@@ -11,12 +9,12 @@ import About from 'components/About'
 import Resume from 'components/Resume'
 
 const routes = (
-    <Router history={history}>
+    <Router history={createHashHistory()}>
         <Route component={App}>
             <IndexRoute component={SimpleForm} />
             <Route path="/table" component={TablePerf} />
             <Route path="/about" component={About} />
-            <Route path="/resume/:name" name="resume" component={Resume} />
+            <Route path="/resume/:name" component={Resume} />
         </Route>
     </Router>
 )

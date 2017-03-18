@@ -1,9 +1,7 @@
-// @flow
-
 import Inferno from 'inferno'
 import AppBar from 'components/AppBar'
 
-function App(props: Object) {
+function App(props) {
     return (
         <div>
             <AppBar />
