@@ -24,6 +24,10 @@ class SimpleForm extends Component {
         route(`/resume/${this.state.name}`)
     }
 
+    shouldComponentUpdate(props, state) {
+        return false
+    }
+
     render(props, state) {
         bench.start('simple_form')
         return (

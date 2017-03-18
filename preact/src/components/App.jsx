@@ -1,11 +1,11 @@
 import { h } from 'preact'
 import Router from 'preact-router'
-import createHashHistory from 'history/createHashHistory'
 import AppBar from 'components/AppBar'
 import About from 'components/About'
 import SimpleForm from 'components/SimpleForm'
 import TablePerf from 'components/TablePerf'
 import Resume from 'components/Resume'
+import createHashHistory from 'history/createHashHistory'
 
 const history = createHashHistory()
 

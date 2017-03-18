@@ -4,7 +4,7 @@ var webpack = require('webpack')
 module.exports = {
   entry:{
     bundle: './src/index.js',
-    vendor: ['history', 'preact', 'preact-router']
+    vendor: ['preact', 'preact-router', 'history/createHashHistory']
   },
 
   output: {
