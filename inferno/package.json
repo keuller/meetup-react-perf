@@ -1,5 +1,5 @@
 {
-  "name": "inferno",
+  "name": "inferno-alternative",
   "version": "1.0.0",
   "main": "src/index.js",
   "license": "MIT",
@@ -19,31 +19,31 @@
       "stage-2"
     ],
     "plugins": [
-      "inferno",
+      ["inferno", { "imports": true }],
       "syntax-flow",
       "transform-flow-strip-types"
     ]
   },
   "dependencies": {
-    "inferno": "^1.4.0",
-    "inferno-component": "^1.4.0",
-    "inferno-router": "^1.4.0"
+    "inferno": "^3.1.0",
+    "inferno-component": "^3.1.0",
+    "inferno-router": "^3.1.0"
   },
   "devDependencies": {
-    "babel-core": "^6.24.0",
-    "babel-loader": "^6.4.1",
-    "babel-plugin-inferno": "^2.0.0",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-plugin-inferno": "^3.2.0",
     "babel-plugin-syntax-flow": "^6.18.0",
     "babel-plugin-syntax-jsx": "^6.18.0",
     "babel-plugin-transform-flow-strip-types": "^6.22.0",
-    "babel-preset-es2015": "^6.24.0",
-    "babel-preset-stage-2": "^6.22.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
     "babel-runtime": "^6.23.0",
-    "cross-env": "^3.2.4",
-    "file-loader": "^0.10.1",
-    "flow-bin": "^0.42.0",
+    "cross-env": "^4.0.0",
+    "file-loader": "^0.11.1",
+    "flow-bin": "^0.45.0",
     "history": "^4.6.1",
-    "webpack": "^2.2.1",
-    "webpack-dev-server": "^2.4.2"
+    "webpack": "^2.4.1",
+    "webpack-dev-server": "^2.4.5"
   }
 }

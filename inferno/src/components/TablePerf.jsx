@@ -1,4 +1,3 @@
-import Inferno from 'inferno'
 import Component from 'inferno-component'
 import { Table } from 'components/TableDetail'
 import contacts from 'state/contacts'

@@ -1,7 +1,3 @@
-// @flow
-
-import Inferno from 'inferno'
-
 const logoStyle = {
     width: '108px',
     height: '108px'

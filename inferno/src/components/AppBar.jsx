@@ -1,5 +1,3 @@
-
-import Inferno from 'inferno'
 import NavItem from 'components/NavItem'
 
 function AppBar(props) {

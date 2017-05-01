@@ -1,4 +1,3 @@
-import Inferno from 'inferno'
 import { Link } from 'inferno-router'
 
 function Resume(props) {

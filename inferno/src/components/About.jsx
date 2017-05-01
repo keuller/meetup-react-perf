@@ -1,5 +1,3 @@
-// @flow
-import Inferno from 'inferno'
 import Component from 'inferno-component'
 import { Link } from 'inferno-router'
 import Logo from 'components/Logo'

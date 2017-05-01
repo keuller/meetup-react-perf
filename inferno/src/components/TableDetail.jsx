@@ -1,5 +1,3 @@
-import Inferno from 'inferno'
-
 export function Table(props) {
     return (
         <table className="table">
