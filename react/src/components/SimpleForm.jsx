@@ -1,4 +1,5 @@
 import React, { PureComponent } from 'react'
+import PropTypes from'prop-types'
 import Bench from 'util/bench'
 
 const bench = new Bench()
@@ -59,7 +60,7 @@ class SimpleForm extends PureComponent {
 }
 
 SimpleForm.contextTypes = {
-    router: React.PropTypes.object
+    router: PropTypes.object
 }
 
 export default SimpleForm
