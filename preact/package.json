@@ -23,15 +23,8 @@
         }
       ],
       "es2015",
-      "stage-2"
-    ],
-    "plugins": [
-      [
-        "transform-react-jsx",
-        {
-          "pragma": "h"
-        }
-      ]
+      "stage-2",
+      "preact"
     ]
   },
   "dependencies": {
@@ -42,9 +35,9 @@
   "devDependencies": {
     "babel-core": "^6.24.1",
     "babel-loader": "^7.0.0",
-    "babel-plugin-transform-react-jsx": "^6.24.1",
     "babel-preset-env": "^1.4.0",
     "babel-preset-es2015": "^6.24.1",
+    "babel-preset-preact": "^1.1.0",
     "babel-preset-stage-2": "^6.24.1",
     "cross-env": "^4.0.0",
     "file-loader": "^0.11.1",
